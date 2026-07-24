@@ -1,0 +1,917 @@
+/*====================================================
+                RESET
+====================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html,
+body{
+    width:100%;
+    height:100%;
+}
+
+body{
+    background:#eef3f8;
+    overflow:hidden;
+}
+
+
+/*====================================================
+            MAIN CONTAINER
+====================================================*/
+
+.login-container{
+    width:100%;
+    height:100vh;
+    display:flex;
+}
+
+
+/*====================================================
+                LEFT PANEL
+====================================================*/
+
+.login-left{
+
+    width:50%;
+    height:100vh;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+
+    background:#0B2E63;          /* Dashboard Sidebar Color */
+
+    color:#ffffff;
+
+}
+
+
+/*====================================================
+                CURVED DESIGN
+====================================================*/
+
+.login-left::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    right:-120px;          /* smaller curve */
+
+    width:240px;           /* decrease curve width */
+
+    height:100%;
+
+     background:#EEF3FA;   /* Oxford Blue */
+
+    border-radius:50%;
+
+    z-index:1;
+
+}
+
+
+
+/*====================================================
+                LEFT CONTENT
+====================================================*/
+
+.overlay{
+
+    width:80%;
+
+    text-align:center;
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+
+/*====================================================
+                    LOGO
+====================================================*/
+
+.college-logo{
+
+    margin-bottom:30px;
+
+}
+
+.college-logo img{
+
+    width:140px;
+
+    height:140px;
+
+    background:white;
+
+    border-radius:50%;
+
+    padding:10px;
+
+}
+
+
+/*====================================================
+            COLLEGE NAME
+====================================================*/
+
+.login-left h1{
+
+    font-size:40px;
+
+    line-height:55px;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+.subtitle{
+
+    font-size:18px;
+
+    line-height:30px;
+
+    opacity:.95;
+
+}
+
+.naac{
+
+    margin-top:20px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+.iso{
+
+    margin-top:8px;
+
+    font-size:18px;
+
+}
+
+
+/*====================================================
+                DIVIDER
+====================================================*/
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:40px 0;
+
+}
+
+.line{
+
+    width:140px;
+
+    height:2px;
+
+    background:white;
+
+}
+
+.circle{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:0 20px;
+
+    color:#0B2E63;
+
+    font-size:28px;
+
+}
+
+
+/*====================================================
+                SYSTEM NAME
+====================================================*/
+
+.login-left h2{
+
+    font-size:34px;
+
+    line-height:48px;
+
+    font-weight:700;
+
+}
+
+.tagline{
+
+    margin-top:20px;
+
+    font-size:20px;
+
+    opacity:.95;
+
+}
+/*====================================================
+                RIGHT PANEL
+====================================================*/
+
+.login-right{
+
+    width:50%;
+    height:100vh;
+
+    background:#EEF3FA;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+
+}
+
+
+/*====================================================
+                ROLE BOXES
+====================================================*/
+
+.user-roles{
+
+    width:620px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+
+    margin-bottom:40px;
+
+}
+
+.role{
+
+    width:100%;
+
+    height:125px;
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.role:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.role a{
+
+    width:100%;
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#0B2E63;
+
+    font-weight:600;
+
+}
+
+.role i{
+
+    font-size:32px;
+
+    margin-bottom:10px;
+
+}
+
+.role span{
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+/*====================================================
+            ACTIVE ROLE
+====================================================*/
+
+.active-role{
+
+    background:#0B2E63;
+
+}
+
+.active-role a{
+
+    color:white;
+
+}
+
+
+/*====================================================
+                LOGIN CARD
+====================================================*/
+
+.login-card{
+
+    width:560px;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    padding:50px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.login-header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.login-header h2{
+
+    color:#0B2E63;
+
+    font-size:34px;
+
+    margin-bottom:8px;
+
+}
+
+.login-header p{
+
+    color:#666;
+
+    font-size:15px;
+
+}
+/*====================================================
+                LOGIN HEADER
+====================================================*/
+
+.login-header{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.login-header h2{
+
+    color:#0B2E63;
+
+    font-size:36px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+}
+
+.login-header p{
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+
+/*====================================================
+                FORM GROUP
+====================================================*/
+
+.input-box{
+
+    margin-bottom:22px;
+
+}
+
+.input-box label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#333;
+
+}
+
+
+/*====================================================
+                INPUT FIELD
+====================================================*/
+
+.input-field{
+
+    display:flex;
+
+    align-items:center;
+
+    height:58px;
+
+    border:1px solid #d7dce5;
+
+    border-radius:14px;
+
+    background:#f8fafc;
+
+    transition:.3s;
+
+}
+
+.input-field:focus-within{
+
+    border-color:#2455FF;
+
+    box-shadow:0 0 0 3px rgba(36,85,255,.15);
+
+}
+
+.input-field i{
+
+    width:55px;
+
+    text-align:center;
+
+    color:#0B2E63;
+
+    font-size:18px;
+
+}
+
+.input-field input{
+
+    width:100%;
+
+    height:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:15px;
+
+    padding-right:18px;
+
+}
+
+
+/*====================================================
+            REMEMBER & FORGOT
+====================================================*/
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:25px 0;
+
+    font-size:14px;
+
+}
+
+.options label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#555;
+
+}
+
+.options a{
+
+    color:#2455FF;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.options a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+/*====================================================
+                LOGIN BUTTON
+====================================================*/
+
+.login-btn{
+
+    width:100%;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#0B2E63;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#154284;
+
+    transform:translateY(-2px);
+
+}
+
+
+/*====================================================
+        INSTITUTION LOGIN BUTTON
+====================================================*/
+
+.institution-btn{
+
+    width:100%;
+
+    height:58px;
+
+    margin-top:18px;
+
+    border:2px solid #2455FF;
+
+    border-radius:14px;
+
+    background:white;
+
+    color:#2455FF;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.institution-btn:hover{
+
+    background:#2455FF;
+
+    color:white;
+
+}
+
+
+/*====================================================
+                FOOTER
+====================================================*/
+
+.footer-text{
+
+    margin-top:30px;
+
+    text-align:center;
+
+    color:#888;
+
+    font-size:13px;
+
+}
+
+
+/*====================================================
+                ANIMATION
+====================================================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.login-card{
+
+    animation:fadeUp .8s ease;
+
+}
+/*====================================================
+                RESPONSIVE DESIGN
+====================================================*/
+
+@media (max-width:1200px){
+
+    .login-left h1{
+        font-size:34px;
+        line-height:48px;
+    }
+
+    .login-left h2{
+        font-size:30px;
+        line-height:42px;
+    }
+
+    .user-roles{
+        width:560px;
+    }
+
+    .login-card{
+        width:520px;
+    }
+
+}
+
+@media (max-width:992px){
+
+    body{
+        overflow:auto;
+    }
+
+    .login-container{
+        flex-direction:column;
+        height:auto;
+    }
+
+    .login-left,
+    .login-right{
+        width:100%;
+        height:auto;
+    }
+
+    .login-left{
+        min-height:500px;
+    }
+
+    .login-left::after{
+        display:none;
+    }
+
+    .login-right{
+        padding:50px 20px;
+    }
+
+    .user-roles{
+        width:100%;
+        max-width:620px;
+    }
+
+    .login-card{
+        width:100%;
+        max-width:620px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .user-roles{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .login-left h1{
+        font-size:30px;
+        line-height:42px;
+    }
+
+    .login-left h2{
+        font-size:26px;
+        line-height:36px;
+    }
+
+    .college-logo img{
+        width:110px;
+        height:110px;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .user-roles{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    .role{
+        height:95px;
+    }
+
+    .login-card{
+        padding:30px;
+    }
+
+    .login-header h2{
+        font-size:30px;
+    }
+
+    .login-btn,
+    .institution-btn{
+        height:52px;
+    }
+
+}
+
+
+/*====================================================
+            SMOOTH TRANSITIONS
+====================================================*/
+
+.role,
+.login-btn,
+.institution-btn,
+.input-field{
+
+    transition:all .30s ease;
+
+}
+
+
+/*====================================================
+            CUSTOM SCROLLBAR
+====================================================*/
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eef3f8;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#0B2E63;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#2455FF;
+
+}
+
+
+/*====================================================
+            INPUT PLACEHOLDER
+====================================================*/
+
+input::placeholder{
+
+    color:#9aa5b1;
+
+    font-size:14px;
+
+}
+
+
+/*====================================================
+            TEXT SELECTION
+====================================================*/
+
+::selection{
+
+    background:#2455FF;
+
+    color:#ffffff;
+
+}
+
+
+/*====================================================
+                HOVER EFFECTS
+====================================================*/
+
+.role:hover{
+
+    background:#0B2E63;
+
+}
+.login-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 25px 50px rgba(0,0,0,.18);
+
+}
+
+
+/*====================================================
+                FOCUS EFFECT
+====================================================*/
+
+input:focus{
+
+    outline:none;
+
+}
